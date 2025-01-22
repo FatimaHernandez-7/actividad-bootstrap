@@ -1,0 +1,52 @@
+[class^="col"], [class*=" col"] {
+    padding: 20px;
+    margin: 15px 5px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    background-color: #f7f7f7; 
+    color: #333; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: justify; 
+  }
+  
+  [class^="col"]:hover, [class*=" col"]:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  [class^="col"]:nth-child(1), [class*=" col"]:nth-child(1) {
+    background-color: #ff6b6b; 
+    color: #fff;
+  }
+  
+  [class^="col"]:nth-child(2), [class*=" col"]:nth-child(2) {
+    background-color: #4ecdc4;
+    color: #fff;
+  }
+  
+  [class^="col"]:nth-child(3), [class*=" col"]:nth-child(3) {
+    background-color: #ffe66d;
+    color: #333;
+  }
+  
+  .row > [class^="col"]:nth-child(1), .row > [class*=" col"]:nth-child(1) {
+    background-color: #6a4c93; 
+    color: #fff;
+  }
+  
+  .row > [class^="col"]:nth-child(2), .row > [class*=" col"]:nth-child(2) {
+    background-color: #1a535c; 
+    color: #fff;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    [class^="col"], [class*=" col"] {
+      margin: 10px 0; 
+    }
+  }
+  
